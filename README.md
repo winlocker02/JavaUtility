@@ -1,8 +1,9 @@
-# JavaUtility - Java test task (Java 17)
+# JavaUtility - Java test task
 
 ## Assembly system
 
-- Gradle 8.1
+- Java 17
+- Gradle 8.5
 
 
 ## Using libraries
