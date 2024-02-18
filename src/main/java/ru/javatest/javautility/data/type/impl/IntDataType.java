@@ -17,16 +17,6 @@ public class IntDataType extends NumberDataType<Integer> {
     }
 
     @Override
-    public boolean isValidData(@NonNull String stringData) {
-        try {
-            getData(stringData);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
-        }
-    }
-
-    @Override
     public void printNumbers(List<Integer> numbers) {
         int min = 0, max = 0, sum = 0;
 

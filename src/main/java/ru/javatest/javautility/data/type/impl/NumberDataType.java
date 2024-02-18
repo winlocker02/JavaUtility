@@ -21,6 +21,16 @@ public abstract class NumberDataType<V extends Number> implements DataType<V> {
         printNumbers(numbers);
     }
 
+    @Override
+    public boolean isValidData(@NonNull String stringData) {
+        try {
+            getData(stringData);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+
     protected final void printResults(V min, V max, V avg, V sum) {
         System.out.println(" --> Minimum number: " + min);
         System.out.println(" --> Maximum number: " + max);
