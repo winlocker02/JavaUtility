@@ -5,10 +5,10 @@
 - Gradle 8.1
 
 
-## List libraries
+## Using libraries
 
 * lombok - https://projectlombok.org/
-* commons-cli - https://mvnrepository.com/artifact/commons-cli/commons-cli/1.6.0
+* JOpt Simple - https://mvnrepository.com/artifact/net.sf.jopt-simple/jopt-simple/
 
 ## How to use?
 ***
