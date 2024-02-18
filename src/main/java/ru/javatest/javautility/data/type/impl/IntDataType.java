@@ -21,15 +21,19 @@ public class IntDataType extends NumberDataType<Integer> {
         int min = 0, max = 0, sum = 0;
 
         for (int number : numbers) {
-            if(number < min) {
+            if(number < min)
                 min = number;
-            }
 
-            if(number > max) {
+            if(number > max)
                 max = number;
-            }
+
             sum += number;
         }
-        printResults(min, max, sum / 2, sum);
+
+        int avg = sum / numbers.size();
+
+        //int avg = sum / 2;
+
+        printResults(min, max, avg, sum);
     }
 }

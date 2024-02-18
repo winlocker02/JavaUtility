@@ -21,14 +21,17 @@ public class FloatDataType extends NumberDataType<Float> {
         float min = 0, max = 0, sum = 0;
 
         for (float number : numbers) {
-            if(number < min) {
+            if(number < min)
                 min = number;
-            }
-            if(number > max) {
+
+            if(number > max)
                 max = number;
-            }
+
             sum += number;
         }
-        printResults(min, max, sum / 2F, sum);
+
+        float avg = sum / numbers.size();
+
+        printResults(min, max, avg, sum);
     }
 }
