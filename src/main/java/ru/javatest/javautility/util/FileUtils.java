@@ -32,9 +32,7 @@ public class FileUtils {
         if(file == null || !file.exists()) return Optional.empty();
 
         if(!file.isDirectory()) {
-            if(isAllowedExtension(file)) {
-                return Optional.of(Collections.singleton(file));
-            }
+            return isAllowedExtension(file) ? Optional.of(Collections.singleton(file)) : Optional.empty();
         }
 
         File[] listFiles = file.listFiles();
